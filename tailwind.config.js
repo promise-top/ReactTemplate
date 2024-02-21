@@ -12,5 +12,8 @@ export default {
   corePlugins: {
     preflight: false,  
   },
+  experimental: {
+    optimizeUniversalDefaults: true,
+  },
 }
 
