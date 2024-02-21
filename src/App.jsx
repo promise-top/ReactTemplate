@@ -1,4 +1,4 @@
-import { Button, ConfigProvider } from 'antd';
+import {  ConfigProvider } from 'antd';
 import theme from './theme'
 import { useRoutes,useNavigate } from 'react-router-dom'
 import routes from './router'
@@ -10,8 +10,6 @@ function App() {
     <ConfigProvider
       theme={theme}
     >
-      <Button type="primary" onClick={()=>navigate('/home')} >Home</Button>
-      <Button style={{marginLeft:'10px'}} onClick={()=>navigate('/about')}>About</Button>
       {element}
     </ConfigProvider>
   )

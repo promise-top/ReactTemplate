@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import { getTestApi } from '@/api'
 import { Button } from 'antd'
+import {useNavigate} from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { incremented, decremented } from '@/store/slices/useCountSlice'
 export default function Home() {
   const dispatch = useDispatch()
+  const navigate = useNavigate()
   useEffect(() => {
     getData()
   }, [])
@@ -20,6 +22,11 @@ export default function Home() {
       <br />
       <br />
       <h1>Home</h1>
+      <br />
+     
+      <br />
+      <br />
+      <br />
       <br />
       <hr />
       <br />
