@@ -13,5 +13,6 @@ module.exports = {
     'declaration-no-important': null,
     'selector-pseudo-class-no-unknown': null,
     'no-descending-specificity': null,
+    'no-empty-source': null,
   },
 }
