@@ -22,4 +22,12 @@ export default defineConfig({
     pure: ['console.log'],
     minify: true,
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler', // 或 "modern"
+        silenceDeprecations: ['legacy-js-api']
+      }
+    }
+  },
 })

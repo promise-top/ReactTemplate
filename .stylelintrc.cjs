@@ -16,3 +16,4 @@ module.exports = {
     'no-empty-source': null,
   },
 }
+

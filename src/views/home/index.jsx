@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { getTestApi } from '@/api'
+// import { getTestApi } from '@/api'
 import { Button } from 'antd'
 import {useNavigate} from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
@@ -7,15 +7,15 @@ import { incremented, decremented } from '@/store/slices/useCountSlice'
 export default function Home() {
   const dispatch = useDispatch()
   const navigate = useNavigate()
-  useEffect(() => {
-    getData()
-  }, [])
+  // useEffect(() => {
+  //   getData()
+  // }, [])
 
   const count = useSelector((state) => state.counter.value)
 
-  const getData = async () => {
-    const { data: res } = await getTestApi()
-  }
+  // const getData = async () => {
+    // const { data: res } = await getTestApi()
+  // }
   return (
     <>
       <br />
